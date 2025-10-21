@@ -1,15 +1,25 @@
 # relatorio_circuito_resistor_capacitor
 Simulação e análise de circuito RC com filtragem, entrada por botão e saída em LEDs.
 
-### Circuito
-![circuito_rc.png](circuito_rc.png)\
-*Figura 1 - Proótipo do circuito no Tinkercad*
+## Diagrama elétrico e Circuito
 
-### Diagrama elétrico
-![diagrama_eletrico.png](diagrama_eletrico.png)\
-*Figura 2 - Diagrama fornecido na atividade*
+<p align="center">
+  <figure style="display:inline-block; margin: 10px;">
+    <img src="circuito_rc.png" alt="Circuito RC" width="400"/>
+    <figcaption><em>Figura 1 - Protótipo do circuito no Tinkercad</em></figcaption>
+  </figure>
+  <figure style="display:inline-block; margin: 10px;">
+    <img src="diagrama_eletrico.png" alt="Diagrama elétrico" width="300"/>
+    <figcaption><em>Figura 2 - Diagrama fornecido na atividade</em></figcaption>
+  </figure>
+</p>
 
-### Código
+
+## Análise do circuito com gráficos
+
+Para acessar o notebook [clique aqui](https://github.com/deborangueira/relatorio_circuito_resistor_capacitor/blob/811152a36af3321862d3f7ba4a1e1637a12d664b/src/analise_rc.ipynb).
+
+## Código
 
 ```P
 int pinoNoRC=0; 
@@ -42,8 +52,3 @@ void loop() {
 
 
 ```
-# Gráficos
-
-### Carga no capacitor (c)
-### Descarga no resistor (R)
-### Comparação: Carga no C e descarga no R
