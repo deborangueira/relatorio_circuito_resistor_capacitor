@@ -42,3 +42,8 @@ void loop() {
 
 
 ```
+# Gráficos
+
+### Carga no capacitor (c)
+### Descarga no resistor (R)
+### Comparação: Carga no C e descarga no R
