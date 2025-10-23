@@ -34,13 +34,13 @@ Serial.begin(9600);
 void loop() { 
 	time=millis(); 
 	valorLido=analogRead(pinoNoRC); 
-	tensaoResistor=(valorLido*5.0/1023); // 5.0V / 1023 degraus = 0.0048876 
-	tensaoCapacitor = abs(5.0-tensaoResistor);
+	tensaoCapacitor=(valorLido*5.0/1023); // Lê diretamente a tensão no capacitor
+	tensaoResistor = 5.0-tensaoCapacitor; // Calcula a tensão no resistor
  	Serial.print(time); //imprime o conteúdo de time no MONITOR SERIAL
     Serial.print(" "); 
-  	Serial.print(tensaoResistor);
+  	Serial.print(tensaoCapacitor);
   	Serial.print(" ");
-  	Serial.println(tensaoCapacitor); 
+  	Serial.println(5.0); // Tensão de entrada fixa em 5V
 	delay(400); 
 }
 
